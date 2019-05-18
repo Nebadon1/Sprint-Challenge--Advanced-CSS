@@ -43,7 +43,7 @@ Mobile first you design mobile experiance first the a dapt to desktop second,
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-Its set the value of a pixes and a rem 1 to 1 
+Its set the value of a pixel and a rem 1 to 1 
 
 4. How would you describe preprocessing to someone new to CSS?
 
