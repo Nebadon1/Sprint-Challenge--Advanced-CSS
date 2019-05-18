@@ -266,9 +266,21 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+@media ( max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media ( max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
