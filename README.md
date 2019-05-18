@@ -34,7 +34,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-Adatative use HTML, which is preselected for differente devices by a server 
+Adatative use HTML, which is preselected for different devices by a server 
 Fully responsive use media Queries flexible grids and images sizes
 
 2. Describe what it means to be mobile first vs desktop first.
@@ -43,7 +43,7 @@ Mobile first you design mobile experiance first the a dapt to desktop second,
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-Its set the value of a pixes and a rem 1 to 1 
+Its set the value of a pixel and a rem 1 to 1 
 
 4. How would you describe preprocessing to someone new to CSS?
 
