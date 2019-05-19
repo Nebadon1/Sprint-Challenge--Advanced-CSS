@@ -7,15 +7,34 @@
   100% { transform: rotate(0deg); }
 }
 
+img.bg {
+    z-index: -1;
+    //filter: blur(8px);
+   // -webkit-filter: blur(8px);
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
+@media screen and (max-width: 1024px){
+    img.bg {
+    display:none;  
+    }
+}
 
 .form{
+    background-color: white;
     border: 2px solid @sea-shell;
     border-radius: 6px;
     margin: 100px auto;
     padding: 16px;
     box-shadow: 5px 9px 16px @shuttle-gray;
     animation: wiggle 1.5s 1;
+
 
     
 
