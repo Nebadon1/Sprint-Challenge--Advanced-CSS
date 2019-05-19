@@ -22,6 +22,10 @@
     p{
     font-size: 2.5rem;
     line-height: 1.4;
+
+    @media @phone {
+        text-align: center;
+      }
     }
 
     h1{
@@ -37,20 +41,20 @@
         margin-bottom: 25px;
       }
 
-      .signup-btn{
-          button{
+.signup-btn{
+        button{
             .button(100%, auto, @bg-color, 20px, @white , 1.8rem);
-            border-radius: 8px;
-            text-align: center;
-            text-decoration:none;
+                border-radius: 8px;
+                text-align: center;
+                text-decoration:none;
             
-            &:hover {
-            transform: scale(1.04);
-            background-color: @CloudBurst;
-            color: @btn-hoover-text;
-          }
+                &:hover {
+                    transform: scale(1.04);
+                    background-color: @CloudBurst;
+                    color: @btn-hoover-text;
+                }
         }
-      }
+    }
       
 }
 
