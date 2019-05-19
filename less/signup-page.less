@@ -1,0 +1,71 @@
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+.form{
+    border: 2px solid @sea-shell;
+    border-radius: 6px;
+    margin: 100px auto;
+    padding: 16px;
+    box-shadow: 5px 9px 16px @shuttle-gray;
+    animation: wiggle 1.5s 1;
+
+    
+
+    p{
+    font-size: 2.5rem;
+    line-height: 1.4;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 33px;
+        margin-bottom: 30px;
+    }
+    b{
+        font-size: 20px;
+    }
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
+
+      .signup-btn{
+          button{
+            .button(100%, auto, @bg-color, 20px, @white , 1.8rem);
+            border-radius: 8px;
+            text-align: center;
+            text-decoration:none;
+            
+            &:hover {
+            transform: scale(1.04);
+            background-color: @CloudBurst;
+            color: @btn-hoover-text;
+          }
+        }
+      }
+      
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    font-size: 1.2rem;
+  }
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    font-size: 1.5rem;
+  }
