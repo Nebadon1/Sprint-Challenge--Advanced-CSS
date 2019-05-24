@@ -226,6 +226,11 @@ footer {
 .home .intro img {
   border-radius: 5px;
 }
+@media ( max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -300,4 +305,99 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+img.bg {
+  z-index: -1;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 1024px) {
+  img.bg {
+    display: none;
+  }
+}
+.form {
+  background-color: white;
+  border: 2px solid #F1F1F1;
+  border-radius: 6px;
+  margin: 100px auto;
+  padding: 16px;
+  box-shadow: 5px 9px 16px #5E6164;
+  animation: wiggle 1.5s 1;
+}
+.form p {
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+@media ( max-width: 500px) {
+  .form p {
+    text-align: center;
+  }
+}
+.form h1 {
+  text-align: center;
+  font-size: 33px;
+  margin-bottom: 30px;
+}
+.form b {
+  font-size: 20px;
+}
+.form hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.form .signup-btn button {
+  width: 100%;
+  height: auto;
+  background-color: #22283A;
+  padding: 20px;
+  color: #FFFF;
+  font-size: 1.8rem;
+  transition-duration: 0.2s;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+.form .signup-btn button:hover {
+  transform: scale(1.04);
+  background-color: #232E4C;
+  color: #EC760C;
+}
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  font-size: 1.2rem;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  font-size: 1.5rem;
 }
